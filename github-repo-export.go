@@ -43,6 +43,6 @@ func main() {
 	}
 	fmt.Println("repo,url,is private,is fork,is archived,stars,forks,language,created at,updated at")
 	for _, repo := range allRepos {
-		fmt.Printf("%s,%s,%t,%t,%t,%d,%d,%s,%s,%s\n", repo.GetName(), repo.GetHTMLURL(), repo.GetPrivate(), repo.GetArchived(), repo.GetFork(), repo.GetStargazersCount(), repo.GetForksCount(), repo.GetLanguage(), repo.GetCreatedAt(), repo.GetUpdatedAt())
+		fmt.Printf("%s,%s,%t,%t,%t,%d,%d,%s,%s,%s\n", repo.GetName(), repo.GetHTMLURL(), repo.GetPrivate(), repo.GetFork(), repo.GetArchived(), repo.GetStargazersCount(), repo.GetForksCount(), repo.GetLanguage(), repo.GetCreatedAt(), repo.GetUpdatedAt())
 	}
 }
